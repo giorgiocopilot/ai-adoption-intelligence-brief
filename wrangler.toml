@@ -1,0 +1,6 @@
+name = "ai-adoption-intelligence-brief"
+compatibility_date = "2026-09-25"
+
+[assets]
+directory = "."
+not_found_handling = "404-page"

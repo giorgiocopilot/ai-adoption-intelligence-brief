@@ -1,0 +1,11 @@
+{
+  "name": "ai-adoption-intelligence-brief",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Interactive AI Adoption Intelligence Brief designed for client interview purposes.",
+  "scripts": {
+    "dev": "npx wrangler dev",
+    "deploy": "npx wrangler deploy",
+    "deploy:preview": "npx wrangler deploy --env preview"
+  }
+}
