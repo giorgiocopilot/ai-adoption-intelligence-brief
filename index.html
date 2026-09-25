@@ -5,29 +5,1846 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="robots" content="noindex,nofollow,noarchive">
   <title>AI Adoption Intelligence Brief | Giorgio Tsoupis</title>
+
   <style>
-    :root{--ink:#14243d;--muted:#607087;--line:#dce4ee;--canvas:#f5f8fb;--surface:#fff;--navy:#0a2040;--blue:#0067b9;--cyan:#22a6d8;--teal:#087766;--gold:#bd8518;--soft:#eaf4fb;--shadow:0 15px 35px rgba(10,32,64,.11);--r:20px}
-    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:linear-gradient(#f8fafc,var(--canvas));color:var(--ink);font-family:Inter,Aptos,"Segoe UI",Arial,sans-serif;line-height:1.45}.wrap{width:min(1500px,calc(100% - 48px));margin:auto}.top{padding:17px 0;border-bottom:1px solid var(--line);display:flex;justify-content:space-between;gap:20px;align-items:center}.identity{font-weight:850;color:var(--navy)}.private{font-size:.8rem;color:var(--muted)}.private:before{content:"";display:inline-block;width:8px;height:8px;border-radius:50%;background:var(--gold);margin-right:8px}.eyebrow{color:var(--blue);font-size:.76rem;letter-spacing:.12em;text-transform:uppercase;font-weight:850;margin:0 0 11px}.eyebrow:before{content:"";display:inline-block;width:9px;height:9px;border-radius:50%;background:var(--cyan);box-shadow:0 0 0 4px rgba(34,166,216,.13);margin-right:9px}h1,h2,h3,p{margin-top:0}h1{font-size:clamp(2.75rem,5.25vw,5.85rem);line-height:.95;letter-spacing:-.067em;margin-bottom:20px;color:var(--navy)}h1 span{color:var(--blue)}h2{font-size:clamp(1.45rem,2.4vw,2.28rem);line-height:1.1;letter-spacing:-.04em;margin-bottom:12px}.lede{color:var(--muted);max-width:70ch}.hero{padding:55px 0 28px}.hero-grid{display:grid;grid-template-columns:1.25fr .75fr;gap:36px;align-items:end}.hero-copy{color:var(--muted);max-width:64ch;font-size:1.08rem}.badge-card{background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:18px;display:grid;grid-template-columns:110px 1fr;gap:16px;align-items:center;box-shadow:var(--shadow);transition:transform .25s ease}.badge-card:hover{transform:translateY(-5px)}.badge-css{width:110px;height:110px;border-radius:28px;display:grid;place-items:center;text-align:center;padding:12px;background:linear-gradient(135deg,#ff6a3d,#dc2a69 47%,#b832dc);color:#fff;border:5px solid #fff;box-shadow:0 0 0 2px #1e3151,inset 0 0 0 4px rgba(255,255,255,.45);font-size:.74rem;font-weight:900;line-height:1.15}.badge-card strong{display:block;font-size:1.03rem}.badge-card p{color:var(--muted);font-size:.84rem;margin:5px 0 0}.metrics{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:27px}.metric{position:relative;overflow:hidden;background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:20px;min-height:150px;transition:transform .25s,box-shadow .25s,border .25s}.metric:hover{transform:translateY(-5px);box-shadow:var(--shadow);border-color:#9acff3}.metric:after{content:"";position:absolute;width:130px;height:130px;border-radius:50%;right:-45px;bottom:-55px;background:rgba(34,166,216,.08);transition:transform .35s}.metric:hover:after{transform:scale(1.4)}.value{font-size:clamp(2rem,3.1vw,3.45rem);line-height:1;font-weight:900;letter-spacing:-.07em;color:var(--blue)}.label{font-weight:800;margin-top:10px}.micro{color:var(--muted);font-size:.8rem;margin-top:3px}section{padding:43px 0}.panel{background:#fff;border:1px solid var(--line);border-radius:24px;padding:clamp(22px,3vw,38px);box-shadow:0 7px 24px rgba(10,32,64,.055)}.field{display:grid;grid-template-columns:1.1fr .9fr;gap:30px;align-items:start}.field-cards{display:grid;gap:12px}.field-card{padding:17px;border:1px solid var(--line);border-radius:15px;transition:.25s}.field-card:hover{transform:translateX(6px);border-color:#a8d4f4;background:#f8fcff}.field-card b{display:block;color:var(--blue);font-size:.8rem;letter-spacing:.08em;text-transform:uppercase}.field-card p{margin:5px 0 0;color:var(--muted);font-size:.9rem}.field-answer{background:linear-gradient(135deg,var(--navy),#164b76);border-radius:18px;padding:28px;color:#fff;min-height:100%;display:flex;flex-direction:column;justify-content:center}.field-answer h3{font-size:clamp(1.6rem,2.9vw,2.7rem);line-height:1.08;letter-spacing:-.045em;margin:0 0 13px}.field-answer p{margin:0;color:rgba(255,255,255,.8)}.challenge{display:grid;grid-template-columns:1fr .95fr;gap:31px;align-items:center}.migration{display:grid;grid-template-columns:1fr auto 1fr;gap:12px;align-items:center}.platform{min-height:142px;border:1px solid var(--line);border-radius:18px;padding:19px;display:flex;flex-direction:column;justify-content:center;align-items:flex-start;transition:transform .45s ease,opacity .45s ease,filter .45s ease,background .45s ease}.platform small{color:var(--muted);font-weight:760}.platform strong{font-size:1.18rem;margin-top:3px}.google{background:#f8fafc}.copilot{background:#eef8fd;border-color:#b8ddf5}.google-mark{width:43px;height:43px;margin-bottom:10px;background:conic-gradient(from 28deg,#4285f4 0 25%,#34a853 0 50%,#fbbc05 0 75%,#ea4335 0);clip-path:polygon(50% 0,100% 88%,0 88%)}.copilot-mark{width:64px;height:40px;margin-bottom:12px;border-radius:20px;background:linear-gradient(130deg,#20a6d8,#1976d2 32%,#9c4dda 62%,#ef6f3c);box-shadow:18px 0 0 -7px rgba(30,170,190,.7);transform:rotate(-8deg)}.migration:has(.copilot:hover) .google,.migration:has(.copilot:focus-within) .google{transform:scale(.72);opacity:.42;filter:grayscale(.4)}.copilot:hover,.copilot:focus-within{transform:scale(1.08);box-shadow:0 13px 32px rgba(0,103,185,.18)}.arrow{font-size:2rem;color:var(--blue);transition:transform .35s}.migration:has(.copilot:hover) .arrow{transform:translateX(8px) scale(1.25)}.risk{display:grid;grid-template-columns:30px 1fr;gap:12px;border-bottom:1px solid var(--line);padding:11px 0}.risk:last-child{border:0}.num{display:grid;place-items:center;border-radius:9px;background:#e7f5f1;color:var(--teal);font-weight:900;width:30px;height:30px}.risk b{display:block;font-size:.92rem}.risk span{color:var(--muted);font-size:.83rem}.proof{display:grid;grid-template-columns:1.02fr .98fr;gap:28px}.ladder{padding-left:37px;position:relative}.ladder:before{content:"";position:absolute;left:13px;top:27px;bottom:28px;width:2px;background:linear-gradient(var(--blue),var(--teal),var(--gold))}.rung{position:relative;background:#f8fafc;border:1px solid var(--line);border-radius:14px;padding:14px 16px;margin-bottom:10px;transition:.25s}.rung:before{content:"";position:absolute;left:-33px;top:50%;transform:translateY(-50%);width:13px;height:13px;border:4px solid #fff;border-radius:50%;background:var(--blue);box-shadow:0 0 0 2px var(--blue)}.rung:nth-child(3):before{background:var(--teal);box-shadow:0 0 0 2px var(--teal)}.rung:nth-child(5):before{background:var(--gold);box-shadow:0 0 0 2px var(--gold)}.rung:hover{transform:translateX(7px);background:#edf7fd;box-shadow:0 8px 17px rgba(0,103,185,.1)}.rung-title{display:flex;justify-content:space-between;font-size:.76rem;font-weight:850;color:var(--blue);letter-spacing:.1em;text-transform:uppercase}.rung strong{display:block;margin-top:4px}.rung p{margin:3px 0 0;color:var(--muted);font-size:.82rem}.insight{background:linear-gradient(145deg,var(--navy),#123c68);color:#fff;border-radius:19px;padding:28px;position:relative;overflow:hidden}.insight:before{content:"";position:absolute;right:-130px;top:-140px;width:310px;height:310px;border-radius:50%;background:radial-gradient(circle,rgba(34,166,216,.47),transparent 67%)}.insight h2{position:relative;font-size:clamp(1.55rem,2.5vw,2.4rem)}.insight h2 em{font-style:normal;color:#87e0ff}.insight>p{position:relative;color:rgba(255,255,255,.78);max-width:50ch}.impact-chart{position:relative;margin-top:23px;display:grid;grid-template-columns:1fr 1fr;gap:10px}.impact-tile{padding:15px;border:1px solid rgba(255,255,255,.18);background:rgba(255,255,255,.075);border-radius:12px;transition:.25s}.impact-tile:hover{transform:translateY(-4px);background:rgba(255,255,255,.14)}.impact-tile b{display:block;font-size:1.55rem;color:#8fe1fa}.impact-tile span{font-size:.75rem;color:rgba(255,255,255,.74)}.impact-square{margin-top:18px;border:1px solid rgba(255,255,255,.18);background:rgba(255,255,255,.06);border-radius:14px;padding:14px}.impact-square h3{font-size:.81rem;letter-spacing:.08em;text-transform:uppercase;margin:0 0 13px;color:#a9e9ff}.square-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:7px;align-items:end;height:92px}.sqbar{height:var(--h);border-radius:6px 6px 2px 2px;background:linear-gradient(180deg,#6ad5fb,#147fc1);transform-origin:bottom;transform:scaleY(.15);transition:transform 1s cubic-bezier(.2,.75,.2,1)}.insight:hover .sqbar{transform:scaleY(1)}.square-labels{display:grid;grid-template-columns:repeat(4,1fr);gap:7px;font-size:.63rem;text-align:center;color:rgba(255,255,255,.7);margin-top:7px}.intel{display:grid;grid-template-columns:.78fr 1.22fr;gap:28px}.quadrant{position:relative;display:grid;grid-template-columns:1fr 1fr;min-height:365px;border:1px solid var(--line);overflow:hidden;border-radius:18px;background:#fbfdff}.quad{padding:21px;transition:.25s}.quad:hover{background:#eaf6fc}.quad:nth-child(2),.quad:nth-child(3){border-left:1px solid var(--line)}.quad:nth-child(3),.quad:nth-child(4){border-top:1px solid var(--line)}.quad h3{font-size:.94rem;margin-bottom:6px}.quad p{font-size:.82rem;color:var(--muted);margin:0}.quad b{color:var(--blue)}.dot{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:105px;height:105px;display:grid;place-items:center;text-align:center;border:8px solid #fff;border-radius:50%;background:var(--navy);color:#fff;font-weight:900;box-shadow:0 9px 24px rgba(10,32,64,.25);transition:.35s}.quadrant:hover .dot{transform:translate(-50%,-50%) scale(1.1) rotate(4deg)}.dot small{display:block;color:#a2e6ff;font-size:.61rem}.tool-row{display:grid;grid-template-columns:104px 1fr 48px;align-items:center;gap:12px;padding:10px 0}.tool-name{font-weight:760;font-size:.85rem}.track{height:11px;border-radius:20px;background:#e8eef4;overflow:hidden}.fill{height:100%;width:var(--w);background:linear-gradient(90deg,var(--blue),var(--cyan));border-radius:inherit;transform-origin:left;transform:scaleX(0);transition:transform 1s cubic-bezier(.2,.75,.2,1)}.tools.active .fill{transform:scaleX(1)}.tool-value{text-align:right;font-size:.82rem;color:var(--muted);font-weight:760}.benchmark{margin-top:20px;padding:17px;border-radius:14px;background:#fbf4e5;border:1px solid #efdcae}.benchmark b{display:block;color:#7c5711}.benchmark span{display:block;color:#826d3e;font-size:.83rem;margin-top:5px}.progress-line{position:relative;height:58px;margin:24px 8px 0}.progress-line:before{content:"";position:absolute;left:1%;right:1%;top:24px;height:4px;border-radius:4px;background:linear-gradient(90deg,var(--blue),var(--teal),var(--gold))}.progress-line:after{content:"";position:absolute;right:0;top:15px;border-left:18px solid var(--gold);border-top:11px solid transparent;border-bottom:11px solid transparent}.progress-line span{position:absolute;top:0;width:13px;height:13px;border-radius:50%;background:#fff;border:4px solid var(--blue);box-shadow:0 0 0 4px #fff}.progress-line span:nth-child(1){left:15%}.progress-line span:nth-child(2){left:49%;border-color:var(--teal)}.progress-line span:nth-child(3){left:83%;border-color:var(--gold)}.timeline{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.phase{position:relative;padding:20px;min-height:235px;border:1px solid var(--line);border-radius:16px;overflow:hidden;transition:.25s}.phase:after{content:"";position:absolute;left:0;right:0;bottom:0;height:5px;background:var(--p);transform:scaleX(.15);transform-origin:left;transition:.35s}.phase:hover{transform:translateY(-5px);border-color:var(--p);box-shadow:var(--shadow)}.phase:hover:after{transform:scaleX(1)}.time{font-size:.76rem;letter-spacing:.11em;text-transform:uppercase;color:var(--p);font-weight:900}.phase h3{margin:8px 0;font-size:1.1rem}.phase p{color:var(--muted);font-size:.84rem}.outcome{display:block;margin-top:13px;font-size:.78rem;font-weight:780}.trust{display:grid;grid-template-columns:1.18fr .82fr;gap:28px;background:var(--navy);color:#fff}.trust p{color:rgba(255,255,255,.77);margin:0}.trust-list{display:grid;gap:9px}.trust-list div{border:1px solid rgba(255,255,255,.14);background:rgba(255,255,255,.07);border-radius:12px;padding:11px 13px;font-size:.83rem}.trust-list b{color:#94e3fb}.closing{text-align:center;padding:65px 0 28px}.closing h2{font-size:clamp(2rem,3.8vw,3.65rem);max-width:23ch;margin:0 auto 16px}.closing p{margin:0 auto;color:var(--muted);max-width:67ch}.quote{margin:25px auto 0;max-width:800px;padding:22px;border-left:4px solid var(--cyan);background:#edf7fc;text-align:left;border-radius:0 14px 14px 0;color:var(--navy);font-size:1.1rem;font-weight:700}.resources{display:flex;justify-content:center;gap:12px;flex-wrap:wrap;margin-top:25px}.resource{display:inline-flex;align-items:center;gap:8px;text-decoration:none;color:var(--navy);background:#fff;border:1px solid var(--line);border-radius:12px;padding:12px 15px;font-size:.88rem;font-weight:790;transition:.25s}.resource:hover{transform:translateY(-3px);border-color:var(--blue);box-shadow:var(--shadow)}.resource:before{content:"↗";color:var(--blue);font-size:1.05rem}.foot{padding:25px 0 39px;color:var(--muted);font-size:.75rem;display:flex;justify-content:space-between;gap:18px;align-items:flex-start}.foot p{margin:0;max-width:95ch}.print{border:1px solid var(--line);background:#fff;padding:9px 12px;border-radius:10px;color:var(--navy);font-weight:760;cursor:pointer;white-space:nowrap}@media(max-width:1060px){.hero-grid,.field,.challenge,.proof,.intel,.trust{grid-template-columns:1fr}.metrics{grid-template-columns:repeat(2,1fr)}}@media(max-width:720px){.wrap{width:min(100% - 28px,1500px)}.top,.foot{flex-direction:column;align-items:flex-start}.hero{padding-top:38px}.metrics,.timeline{grid-template-columns:1fr}.migration{grid-template-columns:1fr}.arrow{transform:rotate(90deg);min-height:34px}.quadrant{min-height:430px}.quad{padding:15px}.dot{width:90px;height:90px}section{padding:27px 0}}@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation-duration:.01ms!important;transition-duration:.01ms!important;scroll-behavior:auto!important}}@media print{@page{size:landscape;margin:10mm}body{background:#fff;font-size:10px}.wrap{width:100%}.top,.hero{padding:8px 0}section{padding:8px 0}.panel{padding:14px;border-radius:12px;box-shadow:none}.hero-grid,.field,.challenge,.proof,.intel,.trust{grid-template-columns:1fr 1fr;gap:12px}.metrics{margin-top:10px;gap:7px}.metric{min-height:78px;padding:10px}.value{font-size:1.6rem}.field{display:none}.closing{padding:16px 0}.resources,.print{display:none}.timeline{gap:8px}.phase{min-height:145px;padding:11px}.badge-card{box-shadow:none}.foot{padding:10px 0}}
+    :root {
+      --ink: #14243d;
+      --muted: #607087;
+      --line: #dce4ee;
+      --canvas: #f5f8fb;
+      --surface: #ffffff;
+      --navy: #0a2040;
+      --blue: #0067b9;
+      --cyan: #22a6d8;
+      --teal: #087766;
+      --gold: #bd8518;
+      --soft: #eaf4fb;
+      --shadow: 0 15px 35px rgba(10, 32, 64, 0.11);
+      --radius: 20px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      background: linear-gradient(#f8fafc, var(--canvas));
+      color: var(--ink);
+      font-family: Inter, Aptos, "Segoe UI", Arial, sans-serif;
+      line-height: 1.45;
+    }
+
+    .wrap {
+      width: min(1500px, calc(100% - 48px));
+      margin: auto;
+    }
+
+    .top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+      padding: 17px 0;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .identity {
+      color: var(--navy);
+      font-weight: 850;
+    }
+
+    .private {
+      color: var(--muted);
+      font-size: 0.8rem;
+    }
+
+    .private::before {
+      content: "";
+      display: inline-block;
+      width: 8px;
+      height: 8px;
+      margin-right: 8px;
+      border-radius: 50%;
+      background: var(--gold);
+    }
+
+    .eyebrow {
+      margin: 0 0 11px;
+      color: var(--blue);
+      font-size: 0.76rem;
+      font-weight: 850;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+    }
+
+    .eyebrow::before {
+      content: "";
+      display: inline-block;
+      width: 9px;
+      height: 9px;
+      margin-right: 9px;
+      border-radius: 50%;
+      background: var(--cyan);
+      box-shadow: 0 0 0 4px rgba(34, 166, 216, 0.13);
+    }
+
+    h1,
+    h2,
+    h3,
+    p {
+      margin-top: 0;
+    }
+
+    h1 {
+      margin-bottom: 20px;
+      color: var(--navy);
+      font-size: clamp(2.75rem, 5.25vw, 5.85rem);
+      line-height: 0.95;
+      letter-spacing: -0.067em;
+    }
+
+    h1 span {
+      color: var(--blue);
+    }
+
+    h2 {
+      margin-bottom: 12px;
+      font-size: clamp(1.45rem, 2.4vw, 2.28rem);
+      line-height: 1.1;
+      letter-spacing: -0.04em;
+    }
+
+    .lede {
+      max-width: 70ch;
+      color: var(--muted);
+    }
+
+    section {
+      padding: 43px 0;
+    }
+
+    .hero {
+      padding: 55px 0 28px;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.25fr 0.75fr;
+      gap: 36px;
+      align-items: end;
+    }
+
+    .hero-copy {
+      max-width: 64ch;
+      color: var(--muted);
+      font-size: 1.08rem;
+    }
+
+    .badge-card {
+      display: grid;
+      grid-template-columns: 110px 1fr;
+      gap: 16px;
+      align-items: center;
+      padding: 18px;
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      transition: transform 0.25s ease;
+    }
+
+    .badge-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .certification-badge {
+      display: block;
+      width: 110px;
+      height: 110px;
+      object-fit: contain;
+      object-position: center;
+      border-radius: 22px;
+      background: #ffffff;
+    }
+
+    .badge-card strong {
+      display: block;
+      font-size: 1.03rem;
+    }
+
+    .badge-card p {
+      margin: 5px 0 0;
+      color: var(--muted);
+      font-size: 0.84rem;
+    }
+
+    .metrics {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 14px;
+      margin-top: 27px;
+    }
+
+    .metric {
+      position: relative;
+      min-height: 150px;
+      overflow: hidden;
+      padding: 20px;
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      transition: transform 0.25s ease, box-shadow 0.25s ease, border 0.25s ease;
+    }
+
+    .metric:hover {
+      border-color: #9acff3;
+      box-shadow: var(--shadow);
+      transform: translateY(-5px);
+    }
+
+    .metric::after {
+      content: "";
+      position: absolute;
+      right: -45px;
+      bottom: -55px;
+      width: 130px;
+      height: 130px;
+      border-radius: 50%;
+      background: rgba(34, 166, 216, 0.08);
+      transition: transform 0.35s ease;
+    }
+
+    .metric:hover::after {
+      transform: scale(1.4);
+    }
+
+    .value {
+      color: var(--blue);
+      font-size: clamp(2rem, 3.1vw, 3.45rem);
+      font-weight: 900;
+      line-height: 1;
+      letter-spacing: -0.07em;
+    }
+
+    .label {
+      margin-top: 10px;
+      font-weight: 800;
+    }
+
+    .micro {
+      margin-top: 3px;
+      color: var(--muted);
+      font-size: 0.8rem;
+    }
+
+    .panel {
+      padding: clamp(22px, 3vw, 38px);
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: 24px;
+      box-shadow: 0 7px 24px rgba(10, 32, 64, 0.055);
+    }
+
+    .field {
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      gap: 30px;
+      align-items: start;
+    }
+
+    .field-cards {
+      display: grid;
+      gap: 12px;
+    }
+
+    .field-card {
+      padding: 17px;
+      border: 1px solid var(--line);
+      border-radius: 15px;
+      transition: transform 0.25s ease, border 0.25s ease, background 0.25s ease;
+    }
+
+    .field-card:hover {
+      background: #f8fcff;
+      border-color: #a8d4f4;
+      transform: translateX(6px);
+    }
+
+    .field-card b {
+      display: block;
+      color: var(--blue);
+      font-size: 0.8rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    .field-card p {
+      margin: 5px 0 0;
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+
+    .field-answer {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      min-height: 100%;
+      padding: 28px;
+      color: #ffffff;
+      background: linear-gradient(135deg, var(--navy), #164b76);
+      border-radius: 18px;
+    }
+
+    .field-answer h3 {
+      margin: 0 0 13px;
+      font-size: clamp(1.6rem, 2.9vw, 2.7rem);
+      line-height: 1.08;
+      letter-spacing: -0.045em;
+    }
+
+    .field-answer p {
+      margin: 0;
+      color: rgba(255, 255, 255, 0.8);
+    }
+
+    .challenge {
+      display: grid;
+      grid-template-columns: 1fr 0.95fr;
+      gap: 31px;
+      align-items: center;
+    }
+
+    .migration {
+      display: grid;
+      grid-template-columns: 1fr auto 1fr;
+      gap: 12px;
+      align-items: center;
+    }
+
+    .platform {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      min-height: 142px;
+      padding: 19px;
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      transition: transform 0.45s ease, opacity 0.45s ease, filter 0.45s ease, background 0.45s ease;
+    }
+
+    .platform small {
+      color: var(--muted);
+      font-weight: 760;
+    }
+
+    .platform strong {
+      margin-top: 3px;
+      font-size: 1.18rem;
+    }
+
+    .google {
+      background: #f8fafc;
+    }
+
+    .copilot {
+      background: #eef8fd;
+      border-color: #b8ddf5;
+    }
+
+    .google-mark {
+      width: 43px;
+      height: 43px;
+      margin-bottom: 10px;
+      background: conic-gradient(
+        from 28deg,
+        #4285f4 0 25%,
+        #34a853 0 50%,
+        #fbbc05 0 75%,
+        #ea4335 0
+      );
+      clip-path: polygon(50% 0, 100% 88%, 0 88%);
+    }
+
+    .copilot-mark {
+      width: 64px;
+      height: 40px;
+      margin-bottom: 12px;
+      background: linear-gradient(130deg, #20a6d8, #1976d2 32%, #9c4dda 62%, #ef6f3c);
+      border-radius: 20px;
+      box-shadow: 18px 0 0 -7px rgba(30, 170, 190, 0.7);
+      transform: rotate(-8deg);
+    }
+
+    .migration:has(.copilot:hover) .google,
+    .migration:has(.copilot:focus-within) .google {
+      opacity: 0.42;
+      filter: grayscale(0.4);
+      transform: scale(0.72);
+    }
+
+    .copilot:hover,
+    .copilot:focus-within {
+      box-shadow: 0 13px 32px rgba(0, 103, 185, 0.18);
+      transform: scale(1.08);
+    }
+
+    .arrow {
+      color: var(--blue);
+      font-size: 2rem;
+      transition: transform 0.35s ease;
+    }
+
+    .migration:has(.copilot:hover) .arrow {
+      transform: translateX(8px) scale(1.25);
+    }
+
+    .risk {
+      display: grid;
+      grid-template-columns: 30px 1fr;
+      gap: 12px;
+      padding: 11px 0;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .risk:last-child {
+      border: 0;
+    }
+
+    .num {
+      display: grid;
+      width: 30px;
+      height: 30px;
+      place-items: center;
+      color: var(--teal);
+      background: #e7f5f1;
+      border-radius: 9px;
+      font-weight: 900;
+    }
+
+    .risk b {
+      display: block;
+      font-size: 0.92rem;
+    }
+
+    .risk span {
+      color: var(--muted);
+      font-size: 0.83rem;
+    }
+
+    .proof {
+      display: grid;
+      grid-template-columns: 1.02fr 0.98fr;
+      gap: 28px;
+    }
+
+    .ladder {
+      position: relative;
+      padding-left: 37px;
+    }
+
+    .ladder::before {
+      content: "";
+      position: absolute;
+      top: 27px;
+      bottom: 28px;
+      left: 13px;
+      width: 2px;
+      background: linear-gradient(var(--blue), var(--teal), var(--gold));
+    }
+
+    .rung {
+      position: relative;
+      margin-bottom: 10px;
+      padding: 14px 16px;
+      background: #f8fafc;
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      transition: transform 0.25s ease, background 0.25s ease, box-shadow 0.25s ease;
+    }
+
+    .rung::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: -33px;
+      width: 13px;
+      height: 13px;
+      background: var(--blue);
+      border: 4px solid #ffffff;
+      border-radius: 50%;
+      box-shadow: 0 0 0 2px var(--blue);
+      transform: translateY(-50%);
+    }
+
+    .rung:nth-child(3)::before {
+      background: var(--teal);
+      box-shadow: 0 0 0 2px var(--teal);
+    }
+
+    .rung:nth-child(5)::before {
+      background: var(--gold);
+      box-shadow: 0 0 0 2px var(--gold);
+    }
+
+    .rung:hover {
+      background: #edf7fd;
+      box-shadow: 0 8px 17px rgba(0, 103, 185, 0.1);
+      transform: translateX(7px);
+    }
+
+    .rung-title {
+      display: flex;
+      justify-content: space-between;
+      color: var(--blue);
+      font-size: 0.76rem;
+      font-weight: 850;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+    }
+
+    .rung strong {
+      display: block;
+      margin-top: 4px;
+    }
+
+    .rung p {
+      margin: 3px 0 0;
+      color: var(--muted);
+      font-size: 0.82rem;
+    }
+
+    .insight {
+      position: relative;
+      overflow: hidden;
+      padding: 28px;
+      color: #ffffff;
+      background: linear-gradient(145deg, var(--navy), #123c68);
+      border-radius: 19px;
+    }
+
+    .insight::before {
+      content: "";
+      position: absolute;
+      top: -140px;
+      right: -130px;
+      width: 310px;
+      height: 310px;
+      background: radial-gradient(circle, rgba(34, 166, 216, 0.47), transparent 67%);
+      border-radius: 50%;
+    }
+
+    .insight h2 {
+      position: relative;
+      font-size: clamp(1.55rem, 2.5vw, 2.4rem);
+    }
+
+    .insight h2 em {
+      color: #87e0ff;
+      font-style: normal;
+    }
+
+    .insight > p {
+      position: relative;
+      max-width: 50ch;
+      color: rgba(255, 255, 255, 0.78);
+    }
+
+    .impact-chart {
+      position: relative;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+      margin-top: 23px;
+    }
+
+    .impact-tile {
+      padding: 15px;
+      background: rgba(255, 255, 255, 0.075);
+      border: 1px solid rgba(255, 255, 255, 0.18);
+      border-radius: 12px;
+      transition: transform 0.25s ease, background 0.25s ease;
+    }
+
+    .impact-tile:hover {
+      background: rgba(255, 255, 255, 0.14);
+      transform: translateY(-4px);
+    }
+
+    .impact-tile b {
+      display: block;
+      color: #8fe1fa;
+      font-size: 1.55rem;
+    }
+
+    .impact-tile span {
+      color: rgba(255, 255, 255, 0.74);
+      font-size: 0.75rem;
+    }
+
+    .impact-square {
+      margin-top: 18px;
+      padding: 14px;
+      background: rgba(255, 255, 255, 0.06);
+      border: 1px solid rgba(255, 255, 255, 0.18);
+      border-radius: 14px;
+    }
+
+    .impact-square h3 {
+      margin: 0 0 13px;
+      color: #a9e9ff;
+      font-size: 0.81rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    .square-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 7px;
+      align-items: end;
+      height: 92px;
+    }
+
+    .sqbar {
+      height: var(--h);
+      background: linear-gradient(180deg, #6ad5fb, #147fc1);
+      border-radius: 6px 6px 2px 2px;
+      transform: scaleY(0.15);
+      transform-origin: bottom;
+      transition: transform 1s cubic-bezier(0.2, 0.75, 0.2, 1);
+    }
+
+    .insight:hover .sqbar {
+      transform: scaleY(1);
+    }
+
+    .square-labels {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 7px;
+      margin-top: 7px;
+      color: rgba(255, 255, 255, 0.7);
+      font-size: 0.63rem;
+      text-align: center;
+    }
+
+    .intel {
+      display: grid;
+      grid-template-columns: 0.78fr 1.22fr;
+      gap: 28px;
+    }
+
+    .quadrant {
+      position: relative;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      min-height: 365px;
+      overflow: hidden;
+      background: #fbfdff;
+      border: 1px solid var(--line);
+      border-radius: 18px;
+    }
+
+    .quad {
+      padding: 21px;
+      transition: background 0.25s ease;
+    }
+
+    .quad:hover {
+      background: #eaf6fc;
+    }
+
+    .quad:nth-child(2),
+    .quad:nth-child(3) {
+      border-left: 1px solid var(--line);
+    }
+
+    .quad:nth-child(3),
+    .quad:nth-child(4) {
+      border-top: 1px solid var(--line);
+    }
+
+    .quad h3 {
+      margin-bottom: 6px;
+      font-size: 0.94rem;
+    }
+
+    .quad p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 0.82rem;
+    }
+
+    .quad b {
+      color: var(--blue);
+    }
+
+    .dot {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      display: grid;
+      width: 105px;
+      height: 105px;
+      place-items: center;
+      color: #ffffff;
+      background: var(--navy);
+      border: 8px solid #ffffff;
+      border-radius: 50%;
+      box-shadow: 0 9px 24px rgba(10, 32, 64, 0.25);
+      font-weight: 900;
+      text-align: center;
+      transform: translate(-50%, -50%);
+      transition: transform 0.35s ease;
+    }
+
+    .quadrant:hover .dot {
+      transform: translate(-50%, -50%) scale(1.1) rotate(4deg);
+    }
+
+    .dot small {
+      display: block;
+      color: #a2e6ff;
+      font-size: 0.61rem;
+    }
+
+    .tool-row {
+      display: grid;
+      grid-template-columns: 104px 1fr 48px;
+      gap: 12px;
+      align-items: center;
+      padding: 10px 0;
+    }
+
+    .tool-name {
+      font-size: 0.85rem;
+      font-weight: 760;
+    }
+
+    .track {
+      height: 11px;
+      overflow: hidden;
+      background: #e8eef4;
+      border-radius: 20px;
+    }
+
+    .fill {
+      width: var(--w);
+      height: 100%;
+      background: linear-gradient(90deg, var(--blue), var(--cyan));
+      border-radius: inherit;
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: transform 1s cubic-bezier(0.2, 0.75, 0.2, 1);
+    }
+
+    .tools.active .fill {
+      transform: scaleX(1);
+    }
+
+    .tool-value {
+      color: var(--muted);
+      font-size: 0.82rem;
+      font-weight: 760;
+      text-align: right;
+    }
+
+    .benchmark {
+      margin-top: 20px;
+      padding: 17px;
+      background: #fbf4e5;
+      border: 1px solid #efdcae;
+      border-radius: 14px;
+    }
+
+    .benchmark b {
+      display: block;
+      color: #7c5711;
+    }
+
+    .benchmark span {
+      display: block;
+      margin-top: 5px;
+      color: #826d3e;
+      font-size: 0.83rem;
+    }
+
+    .progress-line {
+      position: relative;
+      height: 58px;
+      margin: 24px 8px 0;
+    }
+
+    .progress-line::before {
+      content: "";
+      position: absolute;
+      top: 24px;
+      right: 1%;
+      left: 1%;
+      height: 4px;
+      background: linear-gradient(90deg, var(--blue), var(--teal), var(--gold));
+      border-radius: 4px;
+    }
+
+    .progress-line::after {
+      content: "";
+      position: absolute;
+      top: 15px;
+      right: 0;
+      border-top: 11px solid transparent;
+      border-bottom: 11px solid transparent;
+      border-left: 18px solid var(--gold);
+    }
+
+    .progress-line span {
+      position: absolute;
+      top: 0;
+      width: 13px;
+      height: 13px;
+      background: #ffffff;
+      border: 4px solid var(--blue);
+      border-radius: 50%;
+      box-shadow: 0 0 0 4px #ffffff;
+    }
+
+    .progress-line span:nth-child(1) {
+      left: 15%;
+    }
+
+    .progress-line span:nth-child(2) {
+      left: 49%;
+      border-color: var(--teal);
+    }
+
+    .progress-line span:nth-child(3) {
+      left: 83%;
+      border-color: var(--gold);
+    }
+
+    .timeline {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 14px;
+    }
+
+    .phase {
+      position: relative;
+      min-height: 235px;
+      overflow: hidden;
+      padding: 20px;
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      transition: transform 0.25s ease, border 0.25s ease, box-shadow 0.25s ease;
+    }
+
+    .phase::after {
+      content: "";
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      height: 5px;
+      background: var(--p);
+      transform: scaleX(0.15);
+      transform-origin: left;
+      transition: transform 0.35s ease;
+    }
+
+    .phase:hover {
+      border-color: var(--p);
+      box-shadow: var(--shadow);
+      transform: translateY(-5px);
+    }
+
+    .phase:hover::after {
+      transform: scaleX(1);
+    }
+
+    .time {
+      color: var(--p);
+      font-size: 0.76rem;
+      font-weight: 900;
+      letter-spacing: 0.11em;
+      text-transform: uppercase;
+    }
+
+    .phase h3 {
+      margin: 8px 0;
+      font-size: 1.1rem;
+    }
+
+    .phase p {
+      color: var(--muted);
+      font-size: 0.84rem;
+    }
+
+    .outcome {
+      display: block;
+      margin-top: 13px;
+      font-size: 0.78rem;
+      font-weight: 780;
+    }
+
+    .trust {
+      display: grid;
+      grid-template-columns: 1.18fr 0.82fr;
+      gap: 28px;
+      color: #ffffff;
+      background: var(--navy);
+    }
+
+    .trust p {
+      margin: 0;
+      color: rgba(255, 255, 255, 0.77);
+    }
+
+    .trust-list {
+      display: grid;
+      gap: 9px;
+    }
+
+    .trust-list div {
+      padding: 11px 13px;
+      background: rgba(255, 255, 255, 0.07);
+      border: 1px solid rgba(255, 255, 255, 0.14);
+      border-radius: 12px;
+      font-size: 0.83rem;
+    }
+
+    .trust-list b {
+      color: #94e3fb;
+    }
+
+    .closing {
+      padding: 65px 0 28px;
+      text-align: center;
+    }
+
+    .closing h2 {
+      max-width: 23ch;
+      margin: 0 auto 16px;
+      font-size: clamp(2rem, 3.8vw, 3.65rem);
+    }
+
+    .closing p {
+      max-width: 67ch;
+      margin: 0 auto;
+      color: var(--muted);
+    }
+
+    .quote {
+      max-width: 800px;
+      margin: 25px auto 0;
+      padding: 22px;
+      color: var(--navy);
+      background: #edf7fc;
+      border-left: 4px solid var(--cyan);
+      border-radius: 0 14px 14px 0;
+      font-size: 1.1rem;
+      font-weight: 700;
+      text-align: left;
+    }
+
+    .resources {
+      display: flex;
+      justify-content: center;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin-top: 25px;
+    }
+
+    .resource {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 12px 15px;
+      color: var(--navy);
+      background: #ffffff;
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      font-size: 0.88rem;
+      font-weight: 790;
+      text-decoration: none;
+      transition: transform 0.25s ease, border 0.25s ease, box-shadow 0.25s ease;
+    }
+
+    .resource:hover {
+      border-color: var(--blue);
+      box-shadow: var(--shadow);
+      transform: translateY(-3px);
+    }
+
+    .resource::before {
+      color: var(--blue);
+      content: "↗";
+      font-size: 1.05rem;
+    }
+
+    .foot {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 18px;
+      padding: 25px 0 39px;
+      color: var(--muted);
+      font-size: 0.75rem;
+    }
+
+    .foot p {
+      max-width: 95ch;
+      margin: 0;
+    }
+
+    .print {
+      padding: 9px 12px;
+      color: var(--navy);
+      background: #ffffff;
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      font-weight: 760;
+      cursor: pointer;
+      white-space: nowrap;
+    }
+
+    @media (max-width: 1060px) {
+      .hero-grid,
+      .field,
+      .challenge,
+      .proof,
+      .intel,
+      .trust {
+        grid-template-columns: 1fr;
+      }
+
+      .metrics {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 720px) {
+      .wrap {
+        width: min(100% - 28px, 1500px);
+      }
+
+      .top,
+      .foot {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .hero {
+        padding-top: 38px;
+      }
+
+      .metrics,
+      .timeline {
+        grid-template-columns: 1fr;
+      }
+
+      .migration {
+        grid-template-columns: 1fr;
+      }
+
+      .arrow {
+        min-height: 34px;
+        transform: rotate(90deg);
+      }
+
+      .quadrant {
+        min-height: 430px;
+      }
+
+      .quad {
+        padding: 15px;
+      }
+
+      .dot {
+        width: 90px;
+        height: 90px;
+      }
+
+      .certification-badge {
+        width: 96px;
+        height: 96px;
+      }
+
+      section {
+        padding: 27px 0;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *,
+      *::before,
+      *::after {
+        animation-duration: 0.01ms !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+      }
+    }
+
+    @media print {
+      @page {
+        size: landscape;
+        margin: 10mm;
+      }
+
+      body {
+        background: #ffffff;
+        font-size: 10px;
+      }
+
+      .wrap {
+        width: 100%;
+      }
+
+      .top,
+      .hero {
+        padding: 8px 0;
+      }
+
+      section {
+        padding: 8px 0;
+      }
+
+      .panel {
+        padding: 14px;
+        border-radius: 12px;
+        box-shadow: none;
+      }
+
+      .hero-grid,
+      .field,
+      .challenge,
+      .proof,
+      .intel,
+      .trust {
+        grid-template-columns: 1fr 1fr;
+        gap: 12px;
+      }
+
+      .metrics {
+        gap: 7px;
+        margin-top: 10px;
+      }
+
+      .metric {
+        min-height: 78px;
+        padding: 10px;
+      }
+
+      .value {
+        font-size: 1.6rem;
+      }
+
+      .field {
+        display: none;
+      }
+
+      .closing {
+        padding: 16px 0;
+      }
+
+      .resources,
+      .print {
+        display: none;
+      }
+
+      .timeline {
+        gap: 8px;
+      }
+
+      .phase {
+        min-height: 145px;
+        padding: 11px;
+      }
+
+      .badge-card {
+        box-shadow: none;
+      }
+
+      .foot {
+        padding: 10px 0;
+      }
+    }
   </style>
 </head>
+
 <body>
-  <div class="wrap top"><div class="identity">Giorgio Tsoupis <span style="color:#8c99a9;font-weight:650">/ AI Adoption &amp; Organisational Change</span></div><div class="private">Client interview brief · public-safe edition</div></div>
+  <div class="wrap top">
+    <div class="identity">
+      Giorgio Tsoupis
+      <span style="color:#8c99a9;font-weight:650">
+        / AI Adoption &amp; Organisational Change
+      </span>
+    </div>
+
+    <div class="private">
+      Client interview brief · public-safe edition
+    </div>
+  </div>
+
   <main>
-    <section class="hero"><div class="wrap"><div class="hero-grid"><div><div class="eyebrow">Pharmaceuticals &amp; Diagnostics Enterprise OCM Lead</div><h1>From licence rollout to <span>measurable work habits.</span></h1><p class="hero-copy">I help people benefit from AI without asking them to become an overnight “AI company”. The work is practical: enablement, trust, behaviour change and evidence of value.</p></div><aside class="badge-card"><div class="badge-css">MICROSOFT<br>AI<br>TRANSFORMATION<br>LEADER</div><div><strong>Microsoft Certified AI Transformation Leader</strong><p>A credential that reinforces the same principle this brief demonstrates: transformation succeeds when technology, people and operating discipline move together.</p></div></aside></div><div class="metrics"><article class="metric"><div class="value counter" data-target="29282" data-format="comma">0</div><div class="label">Enabled users</div><div class="micro">Prior enterprise programme</div></article><article class="metric"><div class="value counter" data-target="27674" data-format="comma">0</div><div class="label">Active users</div><div class="micro">Measurable adoption base</div></article><article class="metric"><div class="value counter" data-target="95" data-suffix="%">0</div><div class="label">Adoption rate</div><div class="micro">Weekly active adoption</div></article><article class="metric"><div class="value counter" data-target="21002" data-format="comma">0</div><div class="label">Weekly active users</div><div class="micro">Latest visible trend point</div></article></div></div></section>
-    <section><div class="wrap panel field"><div><div class="eyebrow">What I see in the corporate field</div><h2>Three AI tensions that shape real adoption.</h2><div class="field-cards"><article class="field-card"><b>01 · Overhyped</b><p>People hear “a Nobel Prize in your pocket”, then cannot make AI work in the flow of a normal day.</p></article><article class="field-card"><b>02 · Underestimated</b><p>Businesses pay for AI, but many have barely any users, no role journey and no evidence that work is changing.</p></article><article class="field-card"><b>03 · Overwhelming</b><p>New models, new tools and a new paradigm arrive continuously. Employees need clarity, not another flood of announcements.</p></article></div></div><aside class="field-answer"><div class="eyebrow" style="color:#9ce7ff">Giorgio’s practical position</div><h3>Make AI useful before making it grand.</h3><p>Giorgio works with people who want to benefit from AI, not become an overnight “AI company”. The operating model creates safe, role-relevant habits and makes the value visible to leaders.</p></aside></div></section>
-    <section><div class="wrap panel challenge"><div><div class="eyebrow">The enterprise change challenge</div><h2>A platform migration becomes real only when work habits change.</h2><p class="lede">Establish the change architecture that makes Microsoft 365 and Copilot usable, trusted and measurable for different employee groups.</p><div class="migration"><div class="platform google" tabindex="0"><div class="google-mark" aria-hidden="true"></div><small>Current environment</small><strong>Google Workspace</strong></div><div class="arrow" aria-hidden="true">→</div><div class="platform copilot" tabindex="0"><div class="copilot-mark" aria-hidden="true"></div><small>Target experience</small><strong>Microsoft 365 + Copilot</strong></div></div></div><div><div class="risk"><div class="num">1</div><div><b>Change saturation</b><span>A technology migration is also a behavioural migration.</span></div></div><div class="risk"><div class="num">2</div><div><b>Role relevance</b><span>Employees adopt when they recognise their own work, not generic prompts.</span></div></div><div class="risk"><div class="num">3</div><div><b>Trust and governance</b><span>Safe, compliant use must be clear before scale begins.</span></div></div><div class="risk"><div class="num">4</div><div><b>Evidence of value</b><span>Leaders need decision-grade signals, not attendance alone.</span></div></div></div></div></section>
-    <section><div class="wrap proof"><article class="panel"><div class="eyebrow">Proof of operating maturity</div><h2>Manage adoption as a progression, not a training event.</h2><div class="ladder"><div class="rung"><div class="rung-title"><span>01 · Enabled</span><span>Access</span></div><strong>29,282 users had access to Copilot</strong><p>Establish licence, access and audience visibility before claiming programme reach.</p></div><div class="rung"><div class="rung-title"><span>02 · Active</span><span>Activation</span></div><strong>27,674 active users · 95% adoption</strong><p>Use active adoption as a leading signal while retaining a view of non-users.</p></div><div class="rung"><div class="rung-title"><span>03 · Engaged</span><span>Depth</span></div><strong>2.68 hours · 28.17 actions · 5.3 prompts</strong><p>Behaviour data identifies where capability is forming and where support is needed.</p></div><div class="rung"><div class="rung-title"><span>04 · Habitual</span><span>Routine</span></div><strong>3% daily users is the next opportunity</strong><p>High activation is a success signal. Repeatable, role-specific habits are the next objective.</p></div><div class="rung"><div class="rung-title"><span>05 · Optimised</span><span>Improve</span></div><strong>Segmented, benchmarked and improved</strong><p>Turn intelligence into targeted action by role, area, tool and adoption stage.</p></div></div></article><aside class="insight"><div class="eyebrow" style="color:#9ce7ff">The interview insight</div><h2>A <em>95% adoption rate</em> is a success signal. It is not the end of the change programme.</h2><p>The next step is to convert broad weekly usage into trusted, habitual and role-specific work patterns, while giving leaders visibility of value, gaps and friction.</p><div class="impact-chart"><div class="impact-tile"><b>1,894 → 21,002</b><span>Visible weekly-active-user progression</span></div><div class="impact-tile"><b>95%</b><span>Latest active-adoption rate</span></div><div class="impact-tile"><b>0%</b><span>Lost-user rate shown in dashboard</span></div><div class="impact-tile"><b>5 pp</b><span>Gap to internal best-area adoption</span></div></div><div class="impact-square"><h3>Adoption progression</h3><div class="square-grid"><div class="sqbar" style="--h:18%"></div><div class="sqbar" style="--h:33%"></div><div class="sqbar" style="--h:68%"></div><div class="sqbar" style="--h:94%"></div></div><div class="square-labels"><span>Baseline</span><span>Activation</span><span>Scale</span><span>Latest</span></div></div></aside></div></section>
-    <section><div class="wrap panel intel"><div><div class="eyebrow">Adoption intelligence</div><h2>Turn telemetry into targeted human action.</h2><p class="lede">The operating model connects employee behaviour, internal benchmarks and interventions, so leadership can invest where it will make a difference.</p><div class="quadrant"><div class="quad"><h3>Segment</h3><p>Identify <b>who</b> needs what next.</p></div><div class="quad"><h3>Diagnose</h3><p>See <b>where</b> behaviour is forming.</p></div><div class="quad"><h3>Benchmark</h3><p>Learn <b>what</b> works internally.</p></div><div class="quad"><h3>Intervene</h3><p>Change <b>the next</b> employee behaviour.</p></div><div class="dot">95%<small>adoption</small></div></div></div><div><div class="eyebrow">Usage informs investment</div><h2>Start where behaviour exists. Build pathways where it does not.</h2><div class="tools" id="tools"><div class="tool-row"><span class="tool-name">Copilot Chat</span><div class="track"><div class="fill" style="--w:50%"></div></div><span class="tool-value">50%</span></div><div class="tool-row"><span class="tool-name">Teams</span><div class="track"><div class="fill" style="--w:35%"></div></div><span class="tool-value">35%</span></div><div class="tool-row"><span class="tool-name">Outlook</span><div class="track"><div class="fill" style="--w:31%"></div></div><span class="tool-value">31%</span></div><div class="tool-row"><span class="tool-name">Excel</span><div class="track"><div class="fill" style="--w:11%"></div></div><span class="tool-value">11%</span></div><div class="tool-row"><span class="tool-name">PowerPoint</span><div class="track"><div class="fill" style="--w:8%"></div></div><span class="tool-value">8%</span></div><div class="tool-row"><span class="tool-name">Word</span><div class="track"><div class="fill" style="--w:6%"></div></div><span class="tool-value">6%</span></div></div><div class="benchmark"><b>95% overall adoption · 100% best-area adoption</b><span>Use an internal benchmark gap of five percentage points to identify local conditions, leadership actions and work patterns worth replicating. Best daily-use benchmark: 9% versus 3% overall.</span></div></div></div></section>
-    <section><div class="wrap panel"><div class="eyebrow">Enterprise first 90 days</div><h2>Establish the measurement and intervention system before rollout waves scale.</h2><p class="lede">A proposed starting framework to tailor with client sponsors once scope, regulatory context, target cohorts and governance model are clarified.</p><div class="progress-line" aria-hidden="true"><span></span><span></span><span></span></div><div class="timeline"><article class="phase" style="--p:#0067b9"><div class="time">Days 0–30</div><h3>Baseline and mobilise</h3><p>Define success measures, employee personas, change impacts, governance cadence, data definitions and the stakeholder network.</p><span class="outcome">Outcome: shared definition of success before scale begins.</span></article><article class="phase" style="--p:#087766"><div class="time">Days 31–60</div><h3>Activate priority cohorts</h3><p>Design role-based journeys, a leader toolkit, champion model, communications, pilot enablement and feedback routes.</p><span class="outcome">Outcome: early evidence of what creates sustained use.</span></article><article class="phase" style="--p:#bd8518"><div class="time">Days 61–90</div><h3>Scale and prove</h3><p>Introduce segmentation, benchmark views, targeted interventions, executive value review and a scale roadmap.</p><span class="outcome">Outcome: investment decisions based on adoption intelligence.</span></article></div></div></section>
-    <section><div class="wrap panel trust"><div><div class="eyebrow" style="color:#9ce7ff">Transparent evidence</div><h2>Scale ambition, with the right governance.</h2><p>Approximately 32,000 Copilot licences are expected to be deployed in the source programme, pending regulatory and legal approvals. This is not a promise to reproduce an adoption percentage for another organisation. It is evidence of the operating discipline needed to measure adoption, surface risk and improve behaviour as a regulated enterprise scales.</p></div><div class="trust-list"><div><b>Public-safe:</b> no client dashboard screenshots, internal URLs or confidential artefacts are included.</div><div><b>Evidence-led:</b> aggregate figures are paired with their limits and next improvement opportunities.</div><div><b>Client-specific:</b> the framework adapts after programme scope, regulation and operating model are confirmed.</div></div></div></section>
-    <section class="closing"><div class="wrap"><div class="eyebrow">Thank you</div><h2>AI earns trust when it helps people do meaningful work, safely and well.</h2><p>Thank you for considering how I could help turn a major technology transition into confident employee capability, visible value and durable change.</p><div class="quote">“The promise of AI in healthcare is not that technology becomes more human. It is that people gain more time, clarity and confidence to focus on what only humans can do.”</div><div class="resources"><a class="resource" href="https://roi-calculator-copilot.giorgiotsoupis.workers.dev/" target="_blank" rel="noopener">Explore the Copilot ROI Calculator</a><a class="resource" href="https://www.linkedin.com/in/george-tsoupis-ai-program-manager/details/recommendations/?detailScreenTabIndex=0" target="_blank" rel="noopener">Read peer reviews of my work</a></div></div></section>
+    <section class="hero">
+      <div class="wrap">
+        <div class="hero-grid">
+          <div>
+            <div class="eyebrow">
+              Pharmaceuticals &amp; Diagnostics Enterprise OCM Lead
+            </div>
+
+            <h1>
+              From licence rollout to
+              <span>measurable work habits.</span>
+            </h1>
+
+            <p class="hero-copy">
+              I help people benefit from AI without asking them to become an
+              overnight “AI company”. The work is practical: enablement, trust,
+              behaviour change and evidence of value.
+            </p>
+          </div>
+
+          <aside class="badge-card">
+            <img
+              class="certification-badge"
+              src="assets/microsoft-ai-transformation-leader-badge.webp"
+              width="512"
+              height="512"
+              alt="Microsoft Certified AI Transformation Leader badge"
+              decoding="async"
+            >
+
+            <div>
+              <strong>Microsoft Certified AI Transformation Leader</strong>
+
+              <p>
+                A credential that reinforces the same principle this brief
+                demonstrates: transformation succeeds when technology, people
+                and operating discipline move together.
+              </p>
+            </div>
+          </aside>
+        </div>
+
+        <div class="metrics">
+          <article class="metric">
+            <div class="value counter" data-target="29282" data-format="comma">0</div>
+            <div class="label">Enabled users</div>
+            <div class="micro">Prior enterprise programme</div>
+          </article>
+
+          <article class="metric">
+            <div class="value counter" data-target="27674" data-format="comma">0</div>
+            <div class="label">Active users</div>
+            <div class="micro">Measurable adoption base</div>
+          </article>
+
+          <article class="metric">
+            <div class="value counter" data-target="95" data-suffix="%">0</div>
+            <div class="label">Adoption rate</div>
+            <div class="micro">Weekly active adoption</div>
+          </article>
+
+          <article class="metric">
+            <div class="value counter" data-target="21002" data-format="comma">0</div>
+            <div class="label">Weekly active users</div>
+            <div class="micro">Latest visible trend point</div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="wrap panel field">
+        <div>
+          <div class="eyebrow">What I see in the corporate field</div>
+
+          <h2>Three AI tensions that shape real adoption.</h2>
+
+          <div class="field-cards">
+            <article class="field-card">
+              <b>01 · Overhyped</b>
+              <p>
+                People hear “a Nobel Prize in your pocket”, then cannot make AI
+                work in the flow of a normal day.
+              </p>
+            </article>
+
+            <article class="field-card">
+              <b>02 · Underestimated</b>
+              <p>
+                Businesses pay for AI, but many have barely any users, no role
+                journey and no evidence that work is changing.
+              </p>
+            </article>
+
+            <article class="field-card">
+              <b>03 · Overwhelming</b>
+              <p>
+                New models, new tools and a new paradigm arrive continuously.
+                Employees need clarity, not another flood of announcements.
+              </p>
+            </article>
+          </div>
+        </div>
+
+        <aside class="field-answer">
+          <div class="eyebrow" style="color:#9ce7ff">
+            Giorgio’s practical position
+          </div>
+
+          <h3>Make AI useful before making it grand.</h3>
+
+          <p>
+            Giorgio works with people who want to benefit from AI, not become
+            an overnight “AI company”. The operating model creates safe,
+            role-relevant habits and makes the value visible to leaders.
+          </p>
+        </aside>
+      </div>
+    </section>
+
+    <section>
+      <div class="wrap panel challenge">
+        <div>
+          <div class="eyebrow">The enterprise change challenge</div>
+
+          <h2>
+            A platform migration becomes real only when work habits change.
+          </h2>
+
+          <p class="lede">
+            Establish the change architecture that makes Microsoft 365 and
+            Copilot usable, trusted and measurable for different employee
+            groups.
+          </p>
+
+          <div class="migration">
+            <div class="platform google" tabindex="0">
+              <div class="google-mark" aria-hidden="true"></div>
+              <small>Current environment</small>
+              <strong>Google Workspace</strong>
+            </div>
+
+            <div class="arrow" aria-hidden="true">→</div>
+
+            <div class="platform copilot" tabindex="0">
+              <div class="copilot-mark" aria-hidden="true"></div>
+              <small>Target experience</small>
+              <strong>Microsoft 365 + Copilot</strong>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <div class="risk">
+            <div class="num">1</div>
+            <div>
+              <b>Change saturation</b>
+              <span>A technology migration is also a behavioural migration.</span>
+            </div>
+          </div>
+
+          <div class="risk">
+            <div class="num">2</div>
+            <div>
+              <b>Role relevance</b>
+              <span>
+                Employees adopt when they recognise their own work, not generic
+                prompts.
+              </span>
+            </div>
+          </div>
+
+          <div class="risk">
+            <div class="num">3</div>
+            <div>
+              <b>Trust and governance</b>
+              <span>Safe, compliant use must be clear before scale begins.</span>
+            </div>
+          </div>
+
+          <div class="risk">
+            <div class="num">4</div>
+            <div>
+              <b>Evidence of value</b>
+              <span>Leaders need decision-grade signals, not attendance alone.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="wrap proof">
+        <article class="panel">
+          <div class="eyebrow">Proof of operating maturity</div>
+
+          <h2>Manage adoption as a progression, not a training event.</h2>
+
+          <div class="ladder">
+            <div class="rung">
+              <div class="rung-title">
+                <span>01 · Enabled</span>
+                <span>Access</span>
+              </div>
+              <strong>29,282 users had access to Copilot</strong>
+              <p>
+                Establish licence, access and audience visibility before
+                claiming programme reach.
+              </p>
+            </div>
+
+            <div class="rung">
+              <div class="rung-title">
+                <span>02 · Active</span>
+                <span>Activation</span>
+              </div>
+              <strong>27,674 active users · 95% adoption</strong>
+              <p>
+                Use active adoption as a leading signal while retaining a view
+                of non-users.
+              </p>
+            </div>
+
+            <div class="rung">
+              <div class="rung-title">
+                <span>03 · Engaged</span>
+                <span>Depth</span>
+              </div>
+              <strong>2.68 hours · 28.17 actions · 5.3 prompts</strong>
+              <p>
+                Behaviour data identifies where capability is forming and where
+                support is needed.
+              </p>
+            </div>
+
+            <div class="rung">
+              <div class="rung-title">
+                <span>04 · Habitual</span>
+                <span>Routine</span>
+              </div>
+              <strong>3% daily users is the next opportunity</strong>
+              <p>
+                High activation is a success signal. Repeatable, role-specific
+                habits are the next objective.
+              </p>
+            </div>
+
+            <div class="rung">
+              <div class="rung-title">
+                <span>05 · Optimised</span>
+                <span>Improve</span>
+              </div>
+              <strong>Segmented, benchmarked and improved</strong>
+              <p>
+                Turn intelligence into targeted action by role, area, tool and
+                adoption stage.
+              </p>
+            </div>
+          </div>
+        </article>
+
+        <aside class="insight">
+          <div class="eyebrow" style="color:#9ce7ff">
+            The interview insight
+          </div>
+
+          <h2>
+            A <em>95% adoption rate</em> is a success signal. It is not the
+            end of the change programme.
+          </h2>
+
+          <p>
+            The next step is to convert broad weekly usage into trusted,
+            habitual and role-specific work patterns, while giving leaders
+            visibility of value, gaps and friction.
+          </p>
+
+          <div class="impact-chart">
+            <div class="impact-tile">
+              <b>1,894 → 21,002</b>
+              <span>Visible weekly-active-user progression</span>
+            </div>
+
+            <div class="impact-tile">
+              <b>95%</b>
+              <span>Latest active-adoption rate</span>
+            </div>
+
+            <div class="impact-tile">
+              <b>0%</b>
+              <span>Lost-user rate shown in dashboard</span>
+            </div>
+
+            <div class="impact-tile">
+              <b>5 pp</b>
+              <span>Gap to internal best-area adoption</span>
+            </div>
+          </div>
+
+          <div class="impact-square">
+            <h3>Adoption progression</h3>
+
+            <div class="square-grid">
+              <div class="sqbar" style="--h:18%"></div>
+              <div class="sqbar" style="--h:33%"></div>
+              <div class="sqbar" style="--h:68%"></div>
+              <div class="sqbar" style="--h:94%"></div>
+            </div>
+
+            <div class="square-labels">
+              <span>Baseline</span>
+              <span>Activation</span>
+              <span>Scale</span>
+              <span>Latest</span>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section>
+      <div class="wrap panel intel">
+        <div>
+          <div class="eyebrow">Adoption intelligence</div>
+
+          <h2>Turn telemetry into targeted human action.</h2>
+
+          <p class="lede">
+            The operating model connects employee behaviour, internal
+            benchmarks and interventions, so leadership can invest where it
+            will make a difference.
+          </p>
+
+          <div class="quadrant">
+            <div class="quad">
+              <h3>Segment</h3>
+              <p>Identify <b>who</b> needs what next.</p>
+            </div>
+
+            <div class="quad">
+              <h3>Diagnose</h3>
+              <p>See <b>where</b> behaviour is forming.</p>
+            </div>
+
+            <div class="quad">
+              <h3>Benchmark</h3>
+              <p>Learn <b>what</b> works internally.</p>
+            </div>
+
+            <div class="quad">
+              <h3>Intervene</h3>
+              <p>Change <b>the next</b> employee behaviour.</p>
+            </div>
+
+            <div class="dot">
+              95%
+              <small>adoption</small>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <div class="eyebrow">Usage informs investment</div>
+
+          <h2>Start where behaviour exists. Build pathways where it does not.</h2>
+
+          <div class="tools" id="tools">
+            <div class="tool-row">
+              <span class="tool-name">Copilot Chat</span>
+              <div class="track">
+                <div class="fill" style="--w:50%"></div>
+              </div>
+              <span class="tool-value">50%</span>
+            </div>
+
+            <div class="tool-row">
+              <span class="tool-name">Teams</span>
+              <div class="track">
+                <div class="fill" style="--w:35%"></div>
+              </div>
+              <span class="tool-value">35%</span>
+            </div>
+
+            <div class="tool-row">
+              <span class="tool-name">Outlook</span>
+              <div class="track">
+                <div class="fill" style="--w:31%"></div>
+              </div>
+              <span class="tool-value">31%</span>
+            </div>
+
+            <div class="tool-row">
+              <span class="tool-name">Excel</span>
+              <div class="track">
+                <div class="fill" style="--w:11%"></div>
+              </div>
+              <span class="tool-value">11%</span>
+            </div>
+
+            <div class="tool-row">
+              <span class="tool-name">PowerPoint</span>
+              <div class="track">
+                <div class="fill" style="--w:8%"></div>
+              </div>
+              <span class="tool-value">8%</span>
+            </div>
+
+            <div class="tool-row">
+              <span class="tool-name">Word</span>
+              <div class="track">
+                <div class="fill" style="--w:6%"></div>
+              </div>
+              <span class="tool-value">6%</span>
+            </div>
+          </div>
+
+          <div class="benchmark">
+            <b>95% overall adoption · 100% best-area adoption</b>
+
+            <span>
+              Use an internal benchmark gap of five percentage points to
+              identify local conditions, leadership actions and work patterns
+              worth replicating. Best daily-use benchmark: 9% versus 3%
+              overall.
+            </span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="wrap panel">
+        <div class="eyebrow">Enterprise first 90 days</div>
+
+        <h2>
+          Establish the measurement and intervention system before rollout
+          waves scale.
+        </h2>
+
+        <p class="lede">
+          A proposed starting framework to tailor with client sponsors once
+          scope, regulatory context, target cohorts and governance model are
+          clarified.
+        </p>
+
+        <div class="progress-line" aria-hidden="true">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
+        <div class="timeline">
+          <article class="phase" style="--p:#0067b9">
+            <div class="time">Days 0–30</div>
+            <h3>Baseline and mobilise</h3>
+            <p>
+              Define success measures, employee personas, change impacts,
+              governance cadence, data definitions and the stakeholder network.
+            </p>
+            <span class="outcome">
+              Outcome: shared definition of success before scale begins.
+            </span>
+          </article>
+
+          <article class="phase" style="--p:#087766">
+            <div class="time">Days 31–60</div>
+            <h3>Activate priority cohorts</h3>
+            <p>
+              Design role-based journeys, a leader toolkit, champion model,
+              communications, pilot enablement and feedback routes.
+            </p>
+            <span class="outcome">
+              Outcome: early evidence of what creates sustained use.
+            </span>
+          </article>
+
+          <article class="phase" style="--p:#bd8518">
+            <div class="time">Days 61–90</div>
+            <h3>Scale and prove</h3>
+            <p>
+              Introduce segmentation, benchmark views, targeted interventions,
+              executive value review and a scale roadmap.
+            </p>
+            <span class="outcome">
+              Outcome: investment decisions based on adoption intelligence.
+            </span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="wrap panel trust">
+        <div>
+          <div class="eyebrow" style="color:#9ce7ff">
+            Transparent evidence
+          </div>
+
+          <h2>Scale ambition, with the right governance.</h2>
+
+          <p>
+            Approximately 32,000 Copilot licences are expected to be deployed
+            in the source programme, pending regulatory and legal approvals.
+            This is not a promise to reproduce an adoption percentage for
+            another organisation. It is evidence of the operating discipline
+            needed to measure adoption, surface risk and improve behaviour as a
+            regulated enterprise scales.
+          </p>
+        </div>
+
+        <div class="trust-list">
+          <div>
+            <b>Public-safe:</b>
+            no client dashboard screenshots, internal URLs or confidential
+            artefacts are included.
+          </div>
+
+          <div>
+            <b>Evidence-led:</b>
+            aggregate figures are paired with their limits and next improvement
+            opportunities.
+          </div>
+
+          <div>
+            <b>Client-specific:</b>
+            the framework adapts after programme scope, regulation and
+            operating model are confirmed.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="closing">
+      <div class="wrap">
+        <div class="eyebrow">Thank you</div>
+
+        <h2>
+          AI earns trust when it helps people do meaningful work, safely and
+          well.
+        </h2>
+
+        <p>
+          Thank you for considering how I could help turn a major technology
+          transition into confident employee capability, visible value and
+          durable change.
+        </p>
+
+        <div class="quote">
+          “The promise of AI in healthcare is not that technology becomes more
+          human. It is that people gain more time, clarity and confidence to
+          focus on what only humans can do.”
+        </div>
+
+        <div class="resources">
+          <a
+            class="resource"
+            href="https://roi-calculator-copilot.giorgiotsoupis.workers.dev/"
+            target="_blank"
+            rel="noopener"
+          >
+            Explore the Copilot ROI Calculator
+          </a>
+
+          <a
+            class="resource"
+            href="https://www.linkedin.com/in/george-tsoupis-ai-program-manager/details/recommendations/?detailScreenTabIndex=0"
+            target="_blank"
+            rel="noopener"
+          >
+            Read peer reviews of my work
+          </a>
+        </div>
+      </div>
+    </section>
   </main>
-  <footer class="wrap foot"><p>Designed for client interview purposes by Giorgio Tsoupis. Figures are anonymised, aggregated evidence from a prior enterprise Microsoft 365 Copilot programme and selected dashboard views. They are not a public case study, endorsement or performance guarantee.</p><button class="print" onclick="window.print()">Print / Save PDF</button></footer>
+
+  <footer class="wrap foot">
+    <p>
+      Designed for client interview purposes by Giorgio Tsoupis. Figures are
+      anonymised, aggregated evidence from a prior enterprise Microsoft 365
+      Copilot programme and selected dashboard views. They are not a public
+      case study, endorsement or performance guarantee.
+    </p>
+
+    <button class="print" onclick="window.print()">
+      Print / Save PDF
+    </button>
+  </footer>
+
   <script>
-    const fmt=(n,e)=>{const s=e.dataset.suffix||'';return(e.dataset.format==='comma'?Math.round(n).toLocaleString('en-GB'):Math.round(n))+s};
-    const count=e=>{if(e.dataset.done)return;e.dataset.done=1;const t=+e.dataset.target,start=performance.now(),dur=1100;const tick=n=>{const p=Math.min((n-start)/dur,1),v=1-Math.pow(1-p,4);e.textContent=fmt(t*v,e);if(p<1)requestAnimationFrame(tick)};requestAnimationFrame(tick)};
-    const io=new IntersectionObserver(es=>es.forEach(x=>{if(!x.isIntersecting)return;if(x.target.classList.contains('counter'))count(x.target);if(x.target.id==='tools')x.target.classList.add('active');io.unobserve(x.target)}),{threshold:.35});
-    document.querySelectorAll('.counter,#tools').forEach(e=>io.observe(e));
+    const formatNumber = (number, element) => {
+      const suffix = element.dataset.suffix || "";
+
+      if (element.dataset.format === "comma") {
+        return Math.round(number).toLocaleString("en-GB") + suffix;
+      }
+
+      return Math.round(number) + suffix;
+    };
+
+    const animateCounter = (element) => {
+      if (element.dataset.done) {
+        return;
+      }
+
+      element.dataset.done = "true";
+
+      const target = Number(element.dataset.target);
+      const start = performance.now();
+      const duration = 1100;
+
+      const update = (currentTime) => {
+        const progress = Math.min((currentTime - start) / duration, 1);
+        const easedProgress = 1 - Math.pow(1 - progress, 4);
+
+        element.textContent = formatNumber(
+          target * easedProgress,
+          element
+        );
+
+        if (progress < 1) {
+          requestAnimationFrame(update);
+        }
+      };
+
+      requestAnimationFrame(update);
+    };
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (!entry.isIntersecting) {
+            return;
+          }
+
+          if (entry.target.classList.contains("counter")) {
+            animateCounter(entry.target);
+          }
+
+          if (entry.target.id === "tools") {
+            entry.target.classList.add("active");
+          }
+
+          observer.unobserve(entry.target);
+        });
+      },
+      {
+        threshold: 0.35
+      }
+    );
+
+    document
+      .querySelectorAll(".counter, #tools")
+      .forEach((element) => observer.observe(element));
   </script>
 </body>
 </html>
